@@ -3526,7 +3526,7 @@ return '⇠ اصدار سورس آرماندو : *v'..version..'* '
 end
 
 if MsgText[1] == 'تحديث السورس' then
-if not msg.SudoBase then return "⇠ هذا الامر يخص ( Mishary ) بس  \n" end
+if not msg.SudoBase then return "⇠ هذا الامر يخص ( Dev ) بس  \n" end
 local GetVerison = https.request('https://alyafae.github.io/GetVersion.txt') or "0"
 GetVerison = GetVerison:gsub("\n",""):gsub(" ","")
 if GetVerison > version then
@@ -3547,7 +3547,7 @@ return buck_up_groups(msg)
 end 
 
 if MsgText[1] == 'رفع نسخه الاحتياطيه' then
-if not msg.SudoBase then return "⇠ هذا الامر يخص ( Mishary ) بس  \n" end
+if not msg.SudoBase then return "⇠ هذا الامر يخص ( Dev ) بس  \n" end
 if msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,function(arg, data)
 if data.content_.ID == 'MessageDocument' then
@@ -3587,25 +3587,25 @@ return false
 end
 
 if (MsgText[1]=="تيست" or MsgText[1]=="test") then 
-if not msg.SudoBase then return"⇠ هذا الامر يخص ( Mishary ) بس  \n" end
+if not msg.SudoBase then return"⇠ هذا الامر يخص ( Dev ) بس  \n" end
 return " تم " 
 end
 
 if (MsgText[1]== "ايديي" or MsgText[1]=="ايدي") and msg.type == "pv" then return  "\n"..msg.sender_user_id_.."\n"  end
 
 if MsgText[1]== "قناة السورس" and msg.type == "pv" then
-local inline = {{{text="قناه‏‏ السـورس : آرماندو ",url="t.me/ee6ee"}}}
-send_key(msg.sender_user_id_,'  [قناة السورس: آرماندو](t.me/ee6ee)',nil,inline,msg.id_)
+local inline = {{{text="قناه‏‏ السـورس : آرماندو ",url="t.me/rnnni"}}}
+send_key(msg.sender_user_id_,'  [قناة السورس: آرماندو](t.me/rnnni)',nil,inline,msg.id_)
 return false
 end
 
 if MsgText[1]== "الاحصائيات" then
-if not msg.SudoBase then return"⇠ هذا الامر يخص ( Mishary ) بس  \n" end
+if not msg.SudoBase then return"⇠ هذا الامر يخص ( Dev ) بس  \n" end
 return 'الاحصائيات  \n\n⇠ عدد المجموعات المفعله : '..redis:scard(boss..'group:ids')..'\n⇠ عدد المشتركين في البوت : '..redis:scard(boss..'users')..' '
 end
 ---------------[End Function data] -----------------------
 if MsgText[1]=="اضف رد عام" then
-if not msg.SudoBase then return"⇠ هذا الامر يخص ( Mishary ) بس  \n" end
+if not msg.SudoBase then return"⇠ هذا الامر يخص ( Dev ) بس  \n" end
 redis:setex(boss..'addrd_all:'..msg.chat_id_..msg.sender_user_id_,300,true)
 redis:del(boss..'allreplay:'..msg.chat_id_..msg.sender_user_id_)
 return "⇠ تمام الحين ارسل كلمة الرد العام "
@@ -3613,12 +3613,12 @@ end
 
 ---------------[End Function data] -----------------------
 if MsgText[1] == "تعيين كليشه الستارت" or MsgText[1] == "تعيين كليشة الستارت"  then
-if not msg.SudoBase then return"⇠ هذا الامر يخص ( Mishary ) بس  \n" end
+if not msg.SudoBase then return"⇠ هذا الامر يخص ( Dev ) بس  \n" end
 redis:setex(boss..':KStart:'..msg.chat_id_..msg.sender_user_id_,900,true)
 return "⇠ تمام الحين ارسل كليشة الستارت \n\n⇠ علما ان الاختصارات كالاتي : \n \n⇠ {الاسم} : لوضع اسم العضو\n⇠ {الايدي} : لوضع ايدي العضو\n⇠ {اليوزر} : لوضع معرف العضو \n⇠ {الرتبه} : لوضع نوع رتبه العضو \n⇠ {البوت} : لاضهار اسم البوت \n⇠ {المطور} : لاضهار معرف Mishary .\n⇠ {تعليق} : لاضهار ردود عشوائيه ."
 end
 if MsgText[1] == "مسح كليشه الستارت" or MsgText[1] == "مسح كليشة الستارت"  then
-if not msg.SudoBase then return"⇠ هذا الامر يخص ( Mishary ) بس  \n" end
+if not msg.SudoBase then return"⇠ هذا الامر يخص ( Dev ) بس  \n" end
 redis:del(boss..':Text_Start')
 return "⇠ تم مسحت كليشه الستارت "
 end
@@ -3903,7 +3903,7 @@ text = [[
 الالعاب ⇠ لعرض العاب البوت 
 السورس ⇠ سورس البوت
  
-للاستفسار - @jjjij‏‌‌‏‌‌‌‌‏
+للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
   ]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -3923,7 +3923,7 @@ msg.textmsg = [[
 الالعاب ⇠ لعرض العاب البوت 
 السورس ⇠ سورس البوت
  
-للاستفسار - @jjjij‏‌‌‏‌‌‌‌‏
+للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
 ]]
 msg.KeyboardCmd = keyboardCmd
 SendMsgInline(msg)
@@ -3979,7 +3979,7 @@ local text = [[ ⤶ اوامر الاداره
 ⇠  طرد المحذوفين
 ⇠  كشف البوتات
 
-[𝐌𝐢𝐬𝐡𝐚𝐫𝐲](https://t.me/jjjij)]]
+[Dev](https://t.me/GGI55)]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -4025,7 +4025,7 @@ local text = [[
 ⇠ الاعدادت
 ⇠ المجموعه
 
-[𝐌𝐢𝐬𝐡𝐚𝐫𝐲](https://t.me/jjjij)
+[Dev](https://t.me/GGI55)
  ]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
@@ -4266,16 +4266,16 @@ return [[
 ⇜ قائمة التيوس 🐐
 ⇜ قائمة الكيك 🍰 
 
-[𝐌𝐢𝐬𝐡𝐚𝐫𝐲](https://t.me/jjjij)
+[Dev](https://t.me/GGI55)
 ]]
 end
 
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
-➭ 𝗌𝗈𝗎𝗋𝖼𝖾 𝖺𝖻𝗎 𝗌𝖺𝖺𝖽
+➭ SourceArmando
 
-[𝗟𝗘𝗚𝗘𝗡𝗗](https://t.me/jjjij)
-[𝗖𝗛𝗔𝗡𝗡𝗘𝗟](https://t.me/EE6EE)
+[𝗟𝗘𝗚𝗘𝗡𝗗](https://t.me/GGI55)
+[𝗖𝗛𝗔𝗡𝗡𝗘𝗟](https://t.me/rnnni)
 
 ]]
 end
