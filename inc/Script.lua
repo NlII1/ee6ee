@@ -105,6 +105,18 @@ end
 end
 
 
+if($text == "صورتي" || $text == "افتاري" ){
+$result = json_decode(file_get_contents("https://api.telegram.org/bot".API_KEY."/getUserProfilePhotos?user_id=$from_id"),true);
+$file_id = $result["result"]["photos"][0][0]["file_id"];
+$count = $result["result"]["total_count"];
+bot('sendphoto',[
+'chat_id'=>$chat_id,
+'photo'=>$file_id,
+'caption'=>"• عدد صورك الكلي هو : ".$count,
+'reply_to_message_id'=>$message->message_id,
+]);
+}
+end
 
 
 if msg.reply_id and not MsgText[2] then
