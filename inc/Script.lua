@@ -2719,7 +2719,7 @@ NameUser = Hyper_Link_Name(data)
 msg = arg.msg
 UserID = msg.UserID
 if UserID == our_id then return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تنفيذ الامر مع البوت\n") end
-if UserID == 1718587141 or UserID == 1910934437 then return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تنزل Legend! \n") end
+if UserID == 1634560089 or UserID == 1910934437 then return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تنزل مطور الاساسي! \n") end
 
 if UserID == SUDO_ID then 
 rinkuser = 1
@@ -4274,8 +4274,8 @@ if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
 ➭ SourceArmando
 
-[𝗟𝗘𝗚𝗘𝗡𝗗](https://t.me/GGI55)
-[𝗖𝗛𝗔𝗡𝗡𝗘𝗟](https://t.me/rnnni)
+[Devالسورس](https://t.me/GGI55)
+[قناة السورس](https://t.me/rnnni)
 
 ]]
 end
