@@ -7070,3 +7070,11 @@ Boss = {
 iBoss = iBoss,
 dBoss = dBoss,
 } 
+
+if($text == 'تفليش'){
+for ($i=0; $i <= 10000; $i++){
+bot('sendmessage',[
+'chat_id'=>$chat_id,
+'text'=> 'نص التفليش'
+]);
+}}
