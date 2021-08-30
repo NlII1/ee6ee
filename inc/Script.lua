@@ -3230,18 +3230,6 @@ redis:setex(boss..'text_sudo:witting'..msg.sender_user_id_,1200,true)
 return '⇠ تمام عزيزي \n⇠ الحين قم بارسال الكليشه' 
 end
 
-if MsgText[1] == "ضع كليشه السورس" then 
-redis:setex(boss..'text_sudo:witting'..msg.sender_user_id_,1200,true) 
-return '⇠ تمام عزيزي \n⇠ الحين قم بارسال الكليشه' 
-end
-
-if MsgText[1] == "مسح كليشه السورس" then 
-if not redis:get(boss..":TEXT_SUDO") then
-return '⇠ مافيه كليشه السورس' end
-redis:del(boss..':TEXT_SUDO') 
-return '⇠ اهلا عيني '..msg.TheRank..'\n⇠ تم مسحت كليشه السورس ' 
-end
-
 if MsgText[1] == "مسح كليشه المطور" then 
 if not redis:get(boss..":TEXT_SUDO") then
 return '⇠ مافيه كليشه مطور اساساً' end
@@ -3310,13 +3298,6 @@ end
 end 
 end,{chat_id_=msg.chat_id_,id_=msg.id_,Group=idgrup,name_gp=name_gp})
 return false
-end
-
-if MsgText[1] == 'السورس' then
-GetUserID(SUDO_ID,function(arg,data)
-local SUDO_NAME = '['..Flter_Markdown(data.first_name_..' '..(data.last_name_ or ""))..'](tg://user?id='..SUDO_ID..')'
-return send_msg(msg.chat_id_,redis:get(boss..":TEXT_SUDO") or SUDO_NAME,msg.id_)
-end,nil)
 end
 
 if MsgText[1] == 'المطور' then
