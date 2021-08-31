@@ -228,7 +228,6 @@ textMD = [[
 ⇠  طرد المحذوفين
 ⇠  كشف البوتات
 
-[Dev](https://t.me/GGI55)
 ]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -277,7 +276,6 @@ textMD = [[
 ⇠  المجموعه
 
 
-[Dev](https://t.me/GGI55)
 ]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -404,7 +402,7 @@ list_settings = '{"inline_keyboard": ['
 ..']}'
 msg.KeyboardCmd = list_settings
 textMD = [[ 
-⤶  العاب  آرماندو  🏌🏻‍♂️  
+⤶  العاب  لسورس آرماندو  🧚🏻‍♂️  
 ⇠  لتفعيل الالعاب او تعطيلها ارسل
 ⇠  تفعـيل ⇠ تعطيل ⇠ الالعاب
 ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ
