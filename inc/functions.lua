@@ -2482,9 +2482,9 @@ if cmd == "tqeed" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد البوت  ") 
 elseif UserID == SUDO_ID then 
-return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد المطور الاساسي ") 
-elseif UserID == 1634560089 or UserID == 1910934437 then 
-return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد مطور السورس ") 
+return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد المطور السورس ") 
+elseif UserID == 1634560089 or UserID == 60809019 then 
+return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..ChatID,UserID) then 
@@ -2734,7 +2734,7 @@ end
 if cmd == "ban" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تحظر البوت  ") 
-elseif UserID == 1634560089 or UserID == 1910934437 then 
+elseif UserID == 1634560089 or UserID == 60809019 then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تحظر مطور السورس ") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تحظر المطور الاساسي ") 
@@ -2765,7 +2765,7 @@ end
 if cmd == "kick" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تطرد البوت ") 
-elseif UserID == 1634560089 or UserID == 1910934437 then 
+elseif UserID == 1634560089 or UserID == 60809019 then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تطرد مطور السورس ") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تطرد المطور الاساسي ") 
@@ -2810,7 +2810,7 @@ end
 if cmd == "ktm" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تكتم البوت ") 
-elseif UserID == 1634560089 or UserID == 1634560089 then 
+elseif UserID == 1634560089 or UserID == 60809019 then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تكتم مطور السورس ") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تكتم المطور الاساسي ") 
@@ -2871,7 +2871,7 @@ end
 if cmd == "bandall" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تحظر البوت  ") 
-elseif UserID == 1634560089 or UserID == 1910934437 then 
+elseif UserID == 1634560089 or UserID == 60809019 then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تحظر مطور السورس ") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تحظر المطور الاساسي ")
