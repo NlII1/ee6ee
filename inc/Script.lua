@@ -3893,7 +3893,7 @@ if MsgText[1] == "/Commands@He82Bot" or MsgText[1] == "/Commands" or  MsgText[1]
 if not msg.Admin then return "- هذا الامر يخص ( الادمن,المدير,المالك,المطور) بس  \n" end
 
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
-text = [[
+text = [[للاستفسار - []]..SUDO_USER..[[]
 ⤶ اهلاً عزيزي في اوامر البوت
 
  الاوامر العامة ↓
@@ -3901,9 +3901,7 @@ text = [[
   م2 ⇠ لعرض اوامر المجموعة
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
-السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+السورس ⇠ سورس البوت‏‌‌‏‌‌
   ]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -3913,7 +3911,7 @@ textD = Flter_Markdown(convert_Klmat(msg,data,textD,true))
 else
 textD = text
 end
-msg.textmsg = [[ 
+msg.textmsg = [[ للاستفسار - []]..SUDO_USER..[[]
 ⤶ اهلاً عزيزي في اوامر البوت
 
  الاوامر العامة ↓
@@ -3922,8 +3920,7 @@ msg.textmsg = [[
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
 السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+ ‏‌‌‏‌‌‌‌‏
 ]]
 msg.KeyboardCmd = keyboardCmd
 SendMsgInline(msg)
@@ -3936,7 +3933,7 @@ if MsgText[1]== 'م1' then
 if not msg.Admin then return "- هذا الامر يخص ( الادمن,المدير,المالك,المطور) بس  \n" end
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 local text = [[ ⤶ اوامر الاداره  
-
+للاستفسار - []]..SUDO_USER..[[]
 ⤶ اوامر الرفع والتنزيل
 ⇠  مالك اساسي    ( رفع ⟺  تنزيل )
 ⇠  مالك               ( رفع ⟺  تنزيل )
@@ -3979,8 +3976,6 @@ local text = [[ ⤶ اوامر الاداره
 ⇠  طرد المحذوفين
 ⇠  كشف البوتات
 
-[Dev](https://t.me/GGI55)]]
-
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
 local textD = redis:get(boss..":awamer_Klesha_m1:")
@@ -4000,7 +3995,8 @@ if not msg.Admin then return "- هذا الامر يخص ( الادمن,المد
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 
 local text = [[ 
-⤶ اوامر الوضع  
+⤶ اوامر الوضع 
+ للاستفسار - []]..SUDO_USER..[[]
 ⇠  ضع الترحيب
 ⇠  ضع القوانين
 ⇠  ضع وصف
@@ -4025,7 +4021,6 @@ local text = [[
 ⇠ الاعدادت
 ⇠ المجموعه
 
-[Dev](https://t.me/GGI55)
  ]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
@@ -4049,6 +4044,8 @@ local text = [[
  ⤶ اهلاً بك في قائمة الحماية
 
 ⤶ اوامر القفل والفتح بالمسح
+
+للاستفسار - []]..SUDO_USER..[[]
 
 ⇠ قفل ⤜ ⤛ فتح التعديل  
 ⇠ قفل ⤜ ⤛ فتح البصمات 
