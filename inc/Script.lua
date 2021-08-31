@@ -3976,8 +3976,7 @@ local text = [[ ⤶ اوامر الاداره
 ⇠ الغاء منع + الكلمه
 ⇠  طرد البوتات
 ⇠  طرد المحذوفين
-⇠  كشف البوتات
-
+⇠  كشف البوتات]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -4022,9 +4021,7 @@ local text = [[ للاستفسار - []]..SUDO_USER..[[]
 ⇠ الحمايه  
 ⇠ الوسائط
 ⇠ الاعدادت
-⇠ المجموعه
-
- ]]
+⇠ المجموعه]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
