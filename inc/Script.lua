@@ -3934,6 +3934,7 @@ if not msg.Admin then return "- هذا الامر يخص ( الادمن,المد
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 local text = [[ ⤶ اوامر الاداره  
 للاستفسار - []]..SUDO_USER..[[]
+
 ⤶ اوامر الرفع والتنزيل
 ⇠  مالك اساسي    ( رفع ⟺  تنزيل )
 ⇠  مالك               ( رفع ⟺  تنزيل )
@@ -3974,7 +3975,7 @@ local text = [[ ⤶ اوامر الاداره
 ⇠ الغاء منع + الكلمه
 ⇠  طرد البوتات
 ⇠  طرد المحذوفين
-⇠  كشف البوتات
+⇠  كشف البوتات]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -3997,6 +3998,7 @@ SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 local text = [[ 
 ⤶ اوامر الوضع 
  للاستفسار - []]..SUDO_USER..[[]
+
 ⇠  ضع الترحيب
 ⇠  ضع القوانين
 ⇠  ضع وصف
@@ -4019,9 +4021,7 @@ local text = [[
 ⇠ الحمايه  
 ⇠ الوسائط
 ⇠ الاعدادت
-⇠ المجموعه
-
- ]]
+⇠ المجموعه]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -4100,7 +4100,6 @@ local text = [[
 ⇠ تفعيل ⤜ ⤛ تعطيل التنظيف التلقائي
 ⇠ تفعيل ⤜ ⤛ الردود العشوائيه
 ]]
-
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
