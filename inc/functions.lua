@@ -70,7 +70,7 @@ return SendMsgInline(msg)
 elseif TextCmdquery == "CmdBack" then
 if not CheckUserAdmin(msg) then return answerCallbackQuery(data.id_,"لا تبعص",true) end
 msg.textmsg = [[
-
+للاستفسار - []]..SUDO_USER..[[]
 ‏‌‌‏‌‌‌‌‏                                    
 ⤶ اهلاً عزيزي في اوامر البوت
 
@@ -80,8 +80,7 @@ msg.textmsg = [[
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
 السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+ ‏‌‌‏‌‌‌‌‏
 ]]
 msg.KeyboardCmd = keyboardCmd
 msg.Editeinline = true
@@ -89,7 +88,7 @@ return SendMsgInline(msg)
 elseif TextCmdquery == "CmdBack1" then
 if not CheckUserAdmin(msg) then return answerCallbackQuery(data.id_,"لا تبعص",true) end
 msg.textmsg = [[
-
+للاستفسار - []]..SUDO_USER..[[]
 ⤶ اهلاً عزيزي في اوامر البوت
 
  الاوامر العامة ↓
@@ -98,8 +97,7 @@ msg.textmsg = [[
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
 السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+ ‏‌‌‏‌‌‌‌‏
 ]]
 msg.KeyboardCmd = keyboardSitting
 msg.Editeinline = true
