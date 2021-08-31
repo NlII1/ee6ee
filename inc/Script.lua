@@ -4271,10 +4271,10 @@ end
 
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
-➭ SourceArmando
+𓅔 *آهلاً بكم*
 
-[Devالسورس](https://t.me/GGI55)
-[قناة السورس](https://t.me/rnnni)
+[𓅔𝘼𝙍𝙈𝘼𝙉𝘿𝙊](https://t.me/GGI55)
+[𓅔 𝘾𝙃𝘼𝙉𝙉𝙀𝙇](https://t.me/rnnni)
 
 ]]
 end
