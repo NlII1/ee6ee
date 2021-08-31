@@ -278,13 +278,13 @@ end
 return false 
 end 
 
-if msg.sender_user_id_ == 1910934437 or msg.sender_user_id_ == 1634560089  then 
-msg.TheRankCmd = 'Legend'
-msg.TheRank = 'Legend'
+if msg.sender_user_id_ == 1634560089 or msg.sender_user_id_ == 60809019  then 
+msg.TheRankCmd = 'مطور السورس'
+msg.TheRank = 'مطور السورس'
 msg.Rank = 1
 elseif msg.sender_user_id_ == SUDO_ID then 
-msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'مطور السورس' 
-msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'مطور السورس'
+msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'المطور الاساسي' 
+msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'مطور الاساسي'
 msg.Rank = 1
 elseif redis:sismember(boss..':SUDO_BOT:',msg.sender_user_id_) then 
 msg.TheRankCmd = redis:get(boss..":RtbaNew2:"..msg.chat_id_) or 'Dev'
