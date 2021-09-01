@@ -18,6 +18,7 @@ return modadd(msg)
 end
    
     
+
 if MsgText[1] == "تعطيل" and not MsgText[2] then
 if not msg.SudoUser then return '⇠ هذا الامر يخص المطور بس .'end
 GetUserID(msg.sender_user_id_,function(arg,data)
@@ -224,7 +225,7 @@ mmmmm = arg.UserName:gsub("@","")
 sendMsg(arg.ChatID,arg.MsgID," ["..data.title_.."](t.me/"..mmmmm..")")
 end,{ChatID=msg.chat_id_,MsgID=msg.id_,UserName=info.username})
 else
-sendMsg(msg.chat_id_,msg.id_,' ['..info.username..'](t.me/ EE6EE)  \n')
+sendMsg(msg.chat_id_,msg.id_,' ['..info.username..'](t.me/ rnnni)  \n')
 end
 
 break
@@ -305,10 +306,10 @@ if not data.sender_user_id_ then return sendMsg(arg.ChatID,arg.MsgID,"⇠ الع
 local UserID = data.sender_user_id_
 if UserID == our_id then  
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد البوت ") 
-elseif UserID == 1634560089 or UserID == 1910934437  then  
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
-elseif UserID == SUDO_ID then 
+elseif UserID == 1634560089 or UserID == 60809019  then  
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور السورس ") 
+elseif UserID == SUDO_ID then 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -349,10 +350,10 @@ local UserID = data.id_
 NameUser = Hyper_Link_Name(data)
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد البوت ") 
-elseif UserID == 1634560089 or UserID == 1910934437  then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
-elseif UserID == SUDO_ID then 
+elseif UserID == 1634560089 or UserID == 60809019  then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور السورس ") 
+elseif UserID == SUDO_ID then 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
