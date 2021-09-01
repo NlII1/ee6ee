@@ -4517,7 +4517,7 @@ if msg.text  == "حظر" then
 GetUserID(FwdUser,function(arg,data)
 if data.username_ then USERNAME = '@'..data.username_ else USERNAME = FlterName(data,20) end
 if FwdUser == 1634560089 or FwdUser == 60809019 then 
-return sendMsg(arg.ChatID,arg.id_,"⇠ مايمديك تحظر مطور الاساسي ") 
+return sendMsg(arg.ChatID,arg.id_,"⇠ مايمديك تحظر مطور السورس ") 
 end
 redis:hset(boss..'username:'..arg.FwdUser,'username',USERNAME)
 if redis:sismember(boss..'bannedpv',FwdUser) then 
