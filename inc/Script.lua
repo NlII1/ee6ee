@@ -351,9 +351,9 @@ NameUser = Hyper_Link_Name(data)
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد البوت ") 
 elseif UserID == 1634560089 or UserID == 60809019  then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
-elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور السورس ") 
+elseif UserID == SUDO_ID then 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -393,9 +393,9 @@ UserID =  MsgText[2]
 if UserID == our_id then   
 return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تقيد البوت ") 
 elseif UserID == "1634560089" or UserID == "60809019" then 
-return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تقيد مطور الاساسي ") 
-elseif UserID == tostring(SUDO_ID) then 
 return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تقيد مطور السورس ") 
+elseif UserID == tostring(SUDO_ID) then 
+return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تقيد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(msg.chat_id_,msg.id_,"⇠ مايمديك تقيد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..msg.chat_id_,UserID) then 
@@ -944,9 +944,9 @@ local UserID = data.sender_user_id_
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد البوت ") 
 elseif UserID == 1634560089 or UserID == 60809019 then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور الاساسي") 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور السورس") 
 elseif UserID == SUDO_ID then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور السورس ") 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -986,9 +986,9 @@ NameUser = Hyper_Link_Name(data)
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد البوت ") 
 elseif UserID == 1634560089 or UserID == 60809019 then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور الاساسي") 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور السورس") 
 elseif UserID == SUDO_ID then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور السورس ") 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تطرد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -1033,9 +1033,9 @@ local UserID = data.sender_user_id_
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر البوت ") 
 elseif UserID == SUDO_ID then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر مطور الاساسي ") 
-elseif UserID == 1634560089 or UserID == 60809019 then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر مطور السورس ") 
+elseif UserID == 1634560089 or UserID == 60809019 then 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -3408,9 +3408,9 @@ NameUser = Hyper_Link_Name(data)
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر البوت ") 
 elseif  UserID == 1634560089 or UserID == 60809019 then 
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر مطور الاساسي ")
-elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر مطور السورس ")
+elseif UserID == SUDO_ID then 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر مطور الاساسي ")
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تحظر المطور ") 
 end
@@ -3431,7 +3431,7 @@ return false
 end
 
 if MsgText[1] == "الغاء العام" or MsgText[1] == "الغاء عام" then
-if not msg.SudoBase then return"⇠ هذا الامر يخص ( Dev ) بس  \n" end
+if not msg.SudoBase then return"⇠ هذا الامر يخص ( المطور الاساسي ) بس  \n" end
 
 if not MsgText[2] and msg.reply_id then 
 GetMsgInfo(msg.chat_id_,msg.reply_id,function(arg,data)
@@ -3893,7 +3893,7 @@ if MsgText[1] == "/Commands@He82Bot" or MsgText[1] == "/Commands" or  MsgText[1]
 if not msg.Admin then return "- هذا الامر يخص ( الادمن,المدير,المالك,المطور) بس  \n" end
 
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
-text = [[
+text = [[للاستفسار - []]..SUDO_USER..[[]
 ⤶ اهلاً عزيزي في اوامر البوت
 
  الاوامر العامة ↓
@@ -3901,9 +3901,7 @@ text = [[
   م2 ⇠ لعرض اوامر المجموعة
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
-السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+السورس ⇠ سورس البوت‏‌‌‏‌‌‌‌‏
   ]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -3913,7 +3911,7 @@ textD = Flter_Markdown(convert_Klmat(msg,data,textD,true))
 else
 textD = text
 end
-msg.textmsg = [[ 
+msg.textmsg = [[للاستفسار - []]..SUDO_USER..[[]
 ⤶ اهلاً عزيزي في اوامر البوت
 
  الاوامر العامة ↓
@@ -3921,9 +3919,7 @@ msg.textmsg = [[
   م2 ⇠ لعرض اوامر المجموعة
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
-السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+السورس ⇠ سورس البوت‏‌‌‏‌‌‌‌‏
 ]]
 msg.KeyboardCmd = keyboardCmd
 SendMsgInline(msg)
@@ -3936,7 +3932,7 @@ if MsgText[1]== 'م1' then
 if not msg.Admin then return "- هذا الامر يخص ( الادمن,المدير,المالك,المطور) بس  \n" end
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 local text = [[ ⤶ اوامر الاداره  
-
+للاستفسار - []]..SUDO_USER..[[]
 ⤶ اوامر الرفع والتنزيل
 ⇠  مالك اساسي    ( رفع ⟺  تنزيل )
 ⇠  مالك               ( رفع ⟺  تنزيل )
@@ -3977,9 +3973,7 @@ local text = [[ ⤶ اوامر الاداره
 ⇠ الغاء منع + الكلمه
 ⇠  طرد البوتات
 ⇠  طرد المحذوفين
-⇠  كشف البوتات
-
-[Dev](https://t.me/GGI55)]]
+⇠  كشف البوتات]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -3999,7 +3993,7 @@ if MsgText[1]== 'م2' then
 if not msg.Admin then return "- هذا الامر يخص ( الادمن,المدير,المالك,المطور) بس  \n" end
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 
-local text = [[ 
+local text = [[للاستفسار - []]..SUDO_USER..[[]
 ⤶ اوامر الوضع  
 ⇠  ضع الترحيب
 ⇠  ضع القوانين
@@ -4023,10 +4017,7 @@ local text = [[
 ⇠ الحمايه  
 ⇠ الوسائط
 ⇠ الاعدادت
-⇠ المجموعه
-
-[Dev](https://t.me/GGI55)
- ]]
+⇠ المجموعه]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -4045,7 +4036,7 @@ if MsgText[1]== 'م3' then
 if not msg.Admin then return "- هذا الامر يخص ( الادمن,المدير,المالك,المطور) بس  \n" end
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 
-local text = [[ 
+local text = [[للاستفسار - []]..SUDO_USER..[[]
  ⤶ اهلاً بك في قائمة الحماية
 
 ⤶ اوامر القفل والفتح بالمسح
@@ -4264,10 +4255,7 @@ return [[
  ⇜ قائمة الكلاب 🐩
 ⇜ قائمة العسل 🍯
 ⇜ قائمة التيوس 🐐
-⇜ قائمة الكيك 🍰 
-
-[Dev](https://t.me/GGI55)
-]]
+⇜ قائمة الكيك 🍰 ]]
 end
 
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
@@ -4383,13 +4371,13 @@ SUDO_USERR = ""
 end
 
 
-text = [[- مـرحبا انا بوت اسـمـي []]..redis:get(boss..':NameBot:')..[[] 🎖
-- اختصـاصـي حمـايه‏‏ المـجمـوعات
+text = [[- مـرحبا انا اسـمـي []]..redis:get(boss..':NameBot:')..[[] 🧚🏻‍♀️
+- آختصاصي اداره‏‏ المجموعات 
 - مـن السـبام والتوجيه‏‏ والتكرار والخ...
-- بس المـطـور يسـتطـيع تفعيل البوت
+- عشان تفعلني ارفعني اشراف وارسل تفعيل. البوت
 ]]..SUDO_USERR..[[
 
-👨🏽‍🔧]]
+🎖]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 if data.last_name_ then Name = data.first_name_ .." "..data.last_name_ else Name = data.first_name_ end
 text = redis:get(boss..':Text_Start') or text
