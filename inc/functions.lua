@@ -69,7 +69,7 @@ msg.Editeinline = true
 return SendMsgInline(msg)
 elseif TextCmdquery == "CmdBack" then
 if not CheckUserAdmin(msg) then return answerCallbackQuery(data.id_,"لا تبعص",true) end
-msg.textmsg = [[
+msg.textmsg = [[ للاستفسار - []]..SUDO_USER..[[]
 
 ‏‌‌‏‌‌‌‌‏                                    
 ⤶ اهلاً عزيزي في اوامر البوت
@@ -79,16 +79,14 @@ msg.textmsg = [[
   م2 ⇠ لعرض اوامر المجموعة
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
-السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+السورس ⇠ سورس البوت‏‌‌‏‌‌‌‌‏
 ]]
 msg.KeyboardCmd = keyboardCmd
 msg.Editeinline = true
 return SendMsgInline(msg)
 elseif TextCmdquery == "CmdBack1" then
 if not CheckUserAdmin(msg) then return answerCallbackQuery(data.id_,"لا تبعص",true) end
-msg.textmsg = [[
+msg.textmsg = [[ للاستفسار - []]..SUDO_USER..[[]
 
 ⤶ اهلاً عزيزي في اوامر البوت
 
@@ -97,9 +95,7 @@ msg.textmsg = [[
   م2 ⇠ لعرض اوامر المجموعة
   م3 ⇠ لعرض اوامر الحماية
 الالعاب ⇠ لعرض العاب البوت 
-السورس ⇠ سورس البوت
- 
-للاستفسار - @GGI55‏‌‌‏‌‌‌‌‏
+السورس ⇠ سورس البوت‏‌‌‏‌‌‌‌‏
 ]]
 msg.KeyboardCmd = keyboardSitting
 msg.Editeinline = true
@@ -229,8 +225,6 @@ textMD = [[
 ⇠  طرد البوتات
 ⇠  طرد المحذوفين
 ⇠  كشف البوتات
-
-[Dev](https://t.me/GGI55)
 ]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -277,9 +271,6 @@ textMD = [[
 ⇠  الوسائط
 ⇠  الاعدادت
 ⇠  المجموعه
-
-
-[Dev](https://t.me/GGI55)
 ]]
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -406,7 +397,7 @@ list_settings = '{"inline_keyboard": ['
 ..']}'
 msg.KeyboardCmd = list_settings
 textMD = [[ 
-⤶  العاب  آرماندو  🏌🏻‍♂️  
+⤶  *العاب  لسورس آرماندو*  🎖  
 ⇠  لتفعيل الالعاب او تعطيلها ارسل
 ⇠  تفعـيل ⇠ تعطيل ⇠ الالعاب
 ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ
@@ -429,8 +420,6 @@ textMD = [[
 ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ
   ⇠ مجوهراتي ⇠ عشان تشوف عدد مجوهراتك 
 ⇠ بيع مجوهراتي + العدد للأستبدال ⇺
-
-[Dev](t.me/GGI55)
 ]] 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -1408,7 +1397,7 @@ var = 'مطور السورس '
 elseif  UserID == SUDO_ID then
 var = redis:get(boss..":RtbaNew1:"..ChatID) or 'مطور اساسي '
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then
-var = redis:get(boss..":RtbaNew2:"..ChatID) or 'Dev' 
+var = redis:get(boss..":RtbaNew2:"..ChatID) or 'المطور' 
 elseif redis:sismember(boss..':MONSHA_Group:'..ChatID,UserID) then
 var = redis:get(boss..":RtbaNew3:"..ChatID) or ' المالك'
 elseif redis:sismember(boss..':Malk_Group:'..ChatID,UserID) then
