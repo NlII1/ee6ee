@@ -2471,9 +2471,9 @@ if cmd == "tqeed" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد البوت  ") 
 elseif UserID == SUDO_ID then 
-return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد المطور الاساسي ") 
+return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد المطور السورس ") 
 elseif UserID == 1634560089 or UserID == 1910934437 then 
-return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد مطور السورس ") 
+return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(ChatID,MsgID,"⇠ مايمديك تقيد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..ChatID,UserID) then 
