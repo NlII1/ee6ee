@@ -1503,7 +1503,7 @@ local info  = redis:hgetall(boss..'username:'..v)
 if info and info.username and info.username:match("@[%a%d_]+") then
 message = message ..i.."( ["..info.username..'] )\n'
 else
-message = message ..i.. '( ['..info.username..'](t.me/EE6EE) )\n'
+message = message ..i.. '( ['..info.username..'](t.me/rnnni) )\n'
 end
 
 i=i+1
