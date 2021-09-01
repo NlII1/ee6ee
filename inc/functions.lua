@@ -611,17 +611,6 @@ end
 return Adminn 
 end
 
-if text == "غنيلي" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(3,200); 
-local Text ='تم اختيار المقطع الصوتي لك' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'Armando.',url="t.me/IIIZIIII"}}, 
-{{text = 'GeSoN.',url="t.me/rnnni"}}, 
-}
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/Ccckkc/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 
 function sendMsg(chat_id,reply_id,text,funcb)
 tdcli_function({
@@ -1413,7 +1402,7 @@ var = 'مطور السورس '
 elseif  UserID == SUDO_ID then
 var = redis:get(boss..":RtbaNew1:"..ChatID) or 'مطور اساسي '
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then
-var = redis:get(boss..":RtbaNew2:"..ChatID) or 'Dev' 
+var = redis:get(boss..":RtbaNew2:"..ChatID) or 'المطور' 
 elseif redis:sismember(boss..':MONSHA_Group:'..ChatID,UserID) then
 var = redis:get(boss..":RtbaNew3:"..ChatID) or ' المالك'
 elseif redis:sismember(boss..':Malk_Group:'..ChatID,UserID) then
