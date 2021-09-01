@@ -225,7 +225,7 @@ mmmmm = arg.UserName:gsub("@","")
 sendMsg(arg.ChatID,arg.MsgID," ["..data.title_.."](t.me/"..mmmmm..")")
 end,{ChatID=msg.chat_id_,MsgID=msg.id_,UserName=info.username})
 else
-sendMsg(msg.chat_id_,msg.id_,' ['..info.username..'](t.me/ EE6EE)  \n')
+sendMsg(msg.chat_id_,msg.id_,' ['..info.username..'](t.me/ rnnni)  \n')
 end
 
 break
@@ -307,9 +307,9 @@ local UserID = data.sender_user_id_
 if UserID == our_id then  
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد البوت ") 
 elseif UserID == 1634560089 or UserID == 60809019  then  
-return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
-elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور السورس ") 
+elseif UserID == SUDO_ID then 
+return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد مطور الاساسي ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"⇠ مايمديك تقيد المطور ") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -4260,10 +4260,10 @@ end
 
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
-➭ SourceArmando
+𓅔 *آهلاً بك*
 
-[Devالسورس](https://t.me/GGI55)
-[قناة السورس](https://t.me/rnnni)
+[𓅔𝘼𝙍𝙈𝘼𝙉𝘿𝙊](https://t.me/GGI55)
+[𓅔𝘾𝙃𝘼𝙉𝙉𝙀𝙇](https://t.me/rnnni)
 
 ]]
 end
