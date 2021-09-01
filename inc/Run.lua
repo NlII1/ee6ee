@@ -287,8 +287,8 @@ msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'المطور ا
 msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'مطور الاساسي'
 msg.Rank = 1
 elseif redis:sismember(boss..':SUDO_BOT:',msg.sender_user_id_) then 
-msg.TheRankCmd = redis:get(boss..":RtbaNew2:"..msg.chat_id_) or 'Dev'
-msg.TheRank = redis:get(boss..":RtbaNew2:"..msg.chat_id_) or 'Dev'
+msg.TheRankCmd = redis:get(boss..":RtbaNew2:"..msg.chat_id_) or 'المطور'
+msg.TheRank = redis:get(boss..":RtbaNew2:"..msg.chat_id_) or 'المطور'
 msg.Rank = 2
 elseif msg.GroupActive and redis:sismember(boss..':Malk_Group:'..msg.chat_id_,msg.sender_user_id_) then 
 msg.TheRankCmd = redis:get(boss..":RtbaNew8:"..msg.chat_id_) or 'مالك اساسي'
